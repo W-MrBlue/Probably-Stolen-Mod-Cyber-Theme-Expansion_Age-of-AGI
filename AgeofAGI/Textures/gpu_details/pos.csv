@@ -1,0 +1,38 @@
+# Pixel origin: top-left of the full 352x177 gpu_empty_board PNG; x right / y down.
+# Each row rolls independently. Weights are relative; 70/10/10/10 means 70%/10%/10%/10%.
+# gpu_id=* applies to every GPU. board and core must always be present.
+slot,gpu_id,x,y,normal_sprite,fakecase_1,fakecase_2,normal_weight,lowfrequency_weight,mismatch_weight,empty_weight
+board,*,0,0,gpu_empty_board,,,100,0,0,0
+core,age_of_agi.gpu0,146,67,gpu_core_nut,gpu_core_normal,gpu_core_matrix,90,5,5,0
+core,age_of_agi.gpu1,146,67,gpu_core_normal,gpu_core_nut,gpu_core_vector,90,5,5,0
+core,age_of_agi.gpu2,146,67,gpu_core_vector,gpu_core_nut,gpu_core_normal,90,5,5,0
+core,age_of_agi.gpu3,146,67,gpu_core_matrix,gpu_core_nut,gpu_core_vector,90,5,5,0
+# Rectangular memory: top row from left to right.
+memory_rec_1,*,109,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+memory_rec_2,*,128,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+memory_rec_3,*,147,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+memory_rec_4,*,166,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+memory_rec_5,*,184,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+memory_rec_6,*,203,23,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,60,20,10,10
+# Square memory: left column top to bottom / right column top to bottom.
+memory_square_left_1,*,99,56,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_left_2,*,99,76,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_left_3,*,99,98,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_left_4,*,99,120,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_right_1,*,230,22,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_right_2,*,230,44,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_right_3,*,230,66,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_right_4,*,230,88,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+memory_square_right_5,*,230,130,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,60,20,10,10
+goldfinger_up,*,42,15,gpu_goldfinger_up,gpu_goldfinger_up_wrongcolor,gpu_goldfinger_up_wrongcolor1,70,5,15,10
+goldfinger_down,*,74,163,gpu_goldfinger_down,gpu_goldfinger_down_wrongcolor,gpu_goldfinger_down_wrongcolor1,70,5,15,10
+power_interface,*,285,10,gpu_power_interface,,,90,0,0,10
+# Power modules: right column from top to bottom.
+power_module_1,*,303,43,gpu_power_module,,,60,0,0,40
+power_module_2,*,303,56,gpu_power_module,,,60,0,0,40
+power_module_3,*,303,70,gpu_power_module,,,60,0,0,40
+power_module_4,*,303,83,gpu_power_module,,,60,0,0,40
+power_module_5,*,303,97,gpu_power_module,,,60,0,0,40
+power_module_6,*,303,110,gpu_power_module,,,60,0,0,40
+power_module_7,*,303,124,gpu_power_module,,,60,0,0,40
+power_module_8,*,303,137,gpu_power_module,,,60,0,0,40

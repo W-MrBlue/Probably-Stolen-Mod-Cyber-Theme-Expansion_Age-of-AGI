@@ -1,0 +1,24 @@
+# GPU appraisal guide. One physical line per key; use literal \n for line breaks.
+book_gpu_guide_publisher,ASTAR科技有限公司
+book_gpu_guide_title,图形计算卡鉴定指南
+book_gpu_guide_intro,图形计算卡是一种计算硬件，用于高速图像渲染或大规模并行矩阵运算，又称显卡。本指南用于鉴定显卡的基础属性以及可用状态
+book_gpu_guide_status_heading,可用状态鉴定
+book_gpu_guide_status_intro,显卡的可用状态主要由其金手指状态，核心状态以及供电接口状态决定。
+book_gpu_guide_contacts_heading,金手指状态问题
+book_gpu_guide_contacts_issues,可能的问题：\n-金手指材质问题\n-金手指缺失
+book_gpu_guide_power_interface_heading,供电接口问题
+book_gpu_guide_power_interface_issues,可能的问题：\n-供电接口缺失
+book_gpu_guide_unusable_warning,上述任意问题出现时，显卡均无法使用
+book_gpu_guide_performance_heading,性能鉴定
+book_gpu_guide_performance_intro,显卡的性能主要由其算力和耗电量构成，公式为:
+book_gpu_guide_performance_formula,"  -实际算力 = 标称算力*(降频显存数目*0.8+正常显存数目*1)/15\n  -实际耗电量=标称耗电量*8/供电模块数目"
+book_gpu_guide_memory_lowfrequency_caption,降频显存
+book_gpu_guide_memory_mismatch_caption,错配显存
+book_gpu_guide_memory_normal_caption,正常显存
+book_gpu_guide_power_module_caption,正常供电模块
+book_gpu_guide_core_heading,核心鉴定
+book_gpu_guide_core_nut_caption,"""营养果""显卡"
+book_gpu_guide_core_normal_caption,标准显卡
+book_gpu_guide_core_vector_caption,"""矢量""显卡"
+book_gpu_guide_core_matrix_caption,"""矩阵""显卡"
+book_gpu_guide_core_mismatch_warning,若核心与显卡型号不匹配，则显卡无法使用

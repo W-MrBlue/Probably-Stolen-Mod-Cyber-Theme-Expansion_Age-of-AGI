@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <ID>age_of_agi</ID>
+  <Name>Age of AGI</Name>
+  <Author>Mrblue</Author>
+  <ModVersion>0.1</ModVersion>
+  <Description>Cyber theme expansion of Probably Stolen</Description>
+  <GameVersions>
+    <Version>0.46</Version>
+  </GameVersions>
+  <Prerequisites />
+  <Assemblies>
+    <Assembly>Aoa.dll</Assembly>
+  </Assemblies>
+  <Capabilities>
+    <Capability>reflection-external</Capability>
+  </Capabilities>
+</Manifest>

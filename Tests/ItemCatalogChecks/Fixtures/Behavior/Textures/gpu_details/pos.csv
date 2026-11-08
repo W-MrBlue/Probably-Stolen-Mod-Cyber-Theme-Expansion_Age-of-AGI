@@ -1,0 +1,12 @@
+slot,gpu_id,x,y,normal_sprite,fakecase_1,fakecase_2,normal_weight,lowfrequency_weight,mismatch_weight,empty_weight
+board,*,0,0,gpu_empty_board,,,1,0,0,0
+core,age_of_agi.gpu0,146,68,gpu_core_nut,,,1,0,0,0
+core,age_of_agi.gpu1,146,68,gpu_core_normal,,,1,0,0,0
+core,age_of_agi.gpu2,146,68,gpu_core_vector,,,1,0,0,0
+core,age_of_agi.gpu3,146,68,gpu_core_matrix,,,1,0,0,0
+memory_rec_1,*,109,24,gpu_mem_normal_rec,gpu_mem_lowfrequency_rec,gpu_mem_mismatch_rec,1,0,0,0
+memory_square_1,*,99,57,gpu_mem_normal_square,gpu_mem_lowfrequency_square,gpu_mem_mismatch_square,1,0,0,0
+goldfinger_up,*,42,16,gpu_goldfinger_up,,,1,0,0,0
+goldfinger_down,*,74,164,gpu_goldfinger_down,,,1,0,0,0
+power_interface,*,285,11,gpu_power_interface,,,1,0,0,0
+power_module_1,*,303,44,gpu_power_module,,,1,0,0,0

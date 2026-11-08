@@ -1,0 +1,482 @@
+item_ai_trained_name,AI Model
+item_ai_trained_desc,An AI model with completed training.
+item_ai_trained_comment,
+item_ai_untrained_name,Untrained AI Model
+item_ai_untrained_desc,An AI model awaiting training.
+item_ai_untrained_comment,
+item_base_grid_name,Grid Base
+item_base_grid_desc,A grid-pattern base for AI hardware.
+item_base_grid_comment,
+item_base_jepa_name,JEPA Base
+item_base_jepa_desc,A base marked for a JEPA architecture.
+item_base_jepa_comment,
+item_base_neural_name,Neural Base
+item_base_neural_desc,A base with a neural-network design.
+item_base_neural_comment,
+item_base_tsfm_name,Transformer Base
+item_base_tsfm_desc,A base marked for a Transformer architecture.
+item_base_tsfm_comment,
+item_compiler_name,Compiler
+item_compiler_desc,A compiler for AI models.
+item_compiler_comment,
+item_cpu0_name,CPU 0
+item_cpu0_desc,A processor component for AI hardware.
+item_cpu0_comment,
+item_cpu1_name,CPU 1
+item_cpu1_desc,A processor component for AI hardware.
+item_cpu1_comment,
+item_cpu2_name,CPU 2
+item_cpu2_desc,A processor component for AI hardware.
+item_cpu2_comment,
+item_disk_empty_name,Empty Disk
+item_disk_box_name,Box of Disks
+item_gpu_color_checker_name,GPU Color Reference
+item_gpu_color_checker_desc,Open to compare the standard color of GPU contacts.
+item_gpu_color_checker_comment,
+item_gpu_guide_name,GPU Appraisal Guide
+item_gpu_guide_desc,Read about GPU components and inspection methods.
+item_gpu_guide_comment,
+item_code_container_name,Code Storage
+item_disk_empty_desc,A blank disk for storing data.
+item_disk_empty_comment,
+item_disk_writer_name,Disk Writer
+item_disk_writer_desc,A device for writing data to disks.
+item_disk_writer_comment,
+machine_stat_power_per_cycle,Power per operation: {0}
+base_model_stat_grid,Assembly grid: {0}×{1}
+base_model_stat_memory_multiplier,Model memory multiplier: ×{0:0.##}
+disk_writer_execute,Execute
+disk_writer_input,Blank disk
+disk_writer_chip,Component chip
+disk_writer_recipe,Component
+disk_writer_choose,Choose component
+disk_writer_change,Change component
+disk_writer_cancel,Cancel
+disk_writer_need_chip,Insert a component chip to choose an output.
+disk_writer_unselected,No component selected.
+disk_writer_output,Output
+disk_writer_control,Control
+disk_writer_power,Power
+compiler_base,Base model
+compiler_grid,Code components
+compiler_output,Output
+compiler_power,Power
+item_gpu0_name,GPU 0
+item_gpu0_desc,A graphics processor component for AI hardware.
+item_gpu0_comment,
+item_gpu1_name,GPU 1
+item_gpu1_desc,A graphics processor component for AI hardware.
+item_gpu1_comment,
+item_gpu2_name,GPU 2
+item_gpu2_desc,A graphics processor component for AI hardware.
+item_gpu2_comment,
+item_gpu3_name,GPU 3
+item_gpu3_desc,A graphics processor component for AI hardware.
+item_gpu3_comment,
+gpu_stat_compute_power,Compute power: {0}
+electronics,Electronics
+item_sign_electronics_name,Electronics Neon Sign
+item_sign_electronics_desc,Display in the showcase for a 75% attraction roll for an electronics dealer, scavenger or black-market seller using a normal-customer slot. Faction reputation influences the visitor. Electronics Industry II also enables advanced dealers.
+item_sign_electronics_comment,A little light connects new business.
+electronic_hardware,Electronic Hardware
+electronic_equipment,Electronic Equipment
+ai_models,AI Models
+data_goods,Data Goods
+data_carrier,Data Carrier
+data_container,Data Container
+codeparts,Code Components
+gpu_stat_power_per_cycle,Required energy: {0} /day
+gpu_power_supply_missing,Power connector missing
+gpu_power_supply_normal,Power connector functional
+gpu_label_compute,GPU compute power
+gpu_label_power,GPU power consumption
+gpu_label_supply,GPU power connector
+cpu_stat_power_boost_rate,Compute bonus: +{0:0.##}%
+cpu_stat_power_per_cycle,Required energy: {0} /day
+memory_stat_capacity,Memory capacity: {0} GB
+item_mem0_name,Memory Module 0
+item_mem0_desc,A memory component for AI hardware.
+item_mem0_comment,
+item_mem1_name,Memory Module 1
+item_mem1_desc,A memory component for AI hardware.
+item_mem1_comment,
+item_mem2_name,Memory Module 2
+item_mem2_desc,A memory component for AI hardware.
+item_mem2_comment,
+item_part_dec_0_name,Decoder Component 0
+item_part_dec_0_desc,A component for a decoder assembly.
+item_part_dec_0_comment,
+item_part_dec_1_name,Decoder Component 1
+item_part_dec_1_desc,A component for a decoder assembly.
+item_part_dec_1_comment,
+item_part_dec_2_name,Decoder Component 2
+item_part_dec_2_desc,A component for a decoder assembly.
+item_part_dec_2_comment,
+item_part_dec_3_name,Decoder Component 3
+item_part_dec_3_desc,A component for a decoder assembly.
+item_part_dec_3_comment,
+item_part_dec_4_name,Decoder Component 4
+item_part_dec_4_desc,A component for a decoder assembly.
+item_part_dec_4_comment,
+item_part_dec_chip_name,Decoder Chip
+item_part_dec_chip_desc,A chip marked for a decoder assembly.
+item_part_dec_chip_comment,
+item_part_enc_0_name,Encoder Component 0
+item_part_enc_0_desc,A component for an encoder assembly.
+item_part_enc_0_comment,
+item_part_enc_1_name,Encoder Component 1
+item_part_enc_1_desc,A component for an encoder assembly.
+item_part_enc_1_comment,
+item_part_enc_2_name,Encoder Component 2
+item_part_enc_2_desc,A component for an encoder assembly.
+item_part_enc_2_comment,
+item_part_enc_3_name,Encoder Component 3
+item_part_enc_3_desc,A component for an encoder assembly.
+item_part_enc_3_comment,
+item_part_enc_4_name,Encoder Component 4
+item_part_enc_4_desc,A component for an encoder assembly.
+item_part_enc_4_comment,
+item_part_enc_chip_name,Encoder Chip
+item_part_enc_chip_desc,A chip marked for an encoder assembly.
+item_part_enc_chip_comment,
+item_part_feedback_name,Feedback Component
+item_part_feedback_desc,Pairs an encoder and decoder at its short ends to reduce their training work by 20%. Each base component receives feedback once.
+item_part_feedback_comment,
+item_part_link_name,Link Component
+item_part_link_desc,Pairs an encoder and a decoder only at its two short-edge ends to raise their base predicted compute by 20%. Side and diagonal contacts do not count; each base component receives this bonus once.
+item_part_link_comment,
+item_serverbox_name,Server Chassis
+item_serverbox_desc,A server chassis for AI hardware.
+item_serverbox_comment,
+item_distributed_terminal_name,Distributed processing terminal
+item_distributed_terminal_desc,A management terminal that connects servers into a cluster.
+item_distributed_terminal_comment,
+network_switch_number,Switch number: {0}
+network_switch_unnumbered,Unassigned
+network_switch_partners,Paired numbers: {0}
+network_switch_clear,Clear
+terminal_number,Terminal number: {0}
+terminal_servers,Active servers: {0}
+terminal_data,"Network data: {0}, free capacity: {1}"
+compiler_execute,Compile
+compiler_control,Control
+compiler_missing_base,Install a base.
+compiler_missing_pair,At least one encoder and one decoder are required.
+compiler_invalid_parts,Invalid component attributes or layout.
+compiler_conflicting_heads,At most one task head is allowed.
+compiler_insufficient_power,Insufficient power.
+compiler_output_full,Insufficient output space.
+compiler_preview,Memory: {1} GB\nPredicted compute: +{2:0.##}%\nPredicted initial durability: {3:0.####}\nTraining work: {0:0.##}\nTraining data required: {5}\nPower per operation: {4}
+part_stat_compute,Base predicted compute: +{0:0.##}%
+ai_stat_training,Training work: {0:0.##}
+ai_stat_training_data,Training data required: {0}
+ai_stat_memory,Memory required: {0} GB
+ai_stat_predicted_compute,Predicted compute: +{0:0.##}%
+ai_stat_predicted_durability,Predicted initial durability: {0:0.####}
+ai_task_computing,Computing
+ai_task_biological_analysis,Biochemical
+item_part_head_awareness_name,Perception Task Head
+item_part_head_awareness_desc,Sets the model task to sensory analysis. At most one task head.
+item_part_head_awareness_comment,
+item_part_head_aggression_name,Malicious Task Head
+item_part_head_aggression_desc,Sets the model task to intelligence intrusion. At most one task head.
+item_part_head_aggression_comment,
+item_part_head_biology_name,Biochemical Task Head
+item_part_head_biology_desc,Sets the model task to biological analysis. At most one task head.
+item_part_head_biology_comment,
+ai_stat_compute,Compute performance: +{0:0.##}%
+ai_stat_durability,Durability: {0:0.####}/{1:0.####}
+server_hardware,Hardware
+server_software,Model and items
+server_cpu,CPU
+server_gpu,GPU
+server_network,Switch (reserved)
+server_cooler,Cooler (reserved)
+server_memory,Memory
+server_model,Model
+server_input,Input
+server_output,Output
+server_power,Power
+server_progress,Task progress
+server_progress_value,{0:0.##} / {1:0.##}
+server_progress_tooltip,Task progress: {0:0.##}/{1:0.##} ({2:0.#}%)
+server_stat_power,Required energy: {0} /day
+server_stat_work,Effective compute: {0:0.##}
+server_stat_memory,Memory: {0} GB
+server_stat_cpu_expansion,CPU expansion materials: {0}/{1}
+server_stat_gpu_expansion,GPU expansion materials: {0}/{1}
+server_ready,Ready
+server_running,Running
+server_invalid_model,The model has no valid compiled attributes.
+server_trained_idle,Trained AI installed; deployment is not implemented yet.
+server_missing_hardware,Check CPU/GPU and memory.
+server_insufficient_memory,Insufficient memory.
+server_insufficient_power,Insufficient power
+server_insufficient_extraction_data,Insufficient extractable data for a full batch
+server_output_full,Insufficient output space. Task paused.
+server_invalid_state,Invalid saved task state. Paused to preserve resources.
+item_net_switch_name,Network Switch
+item_net_switch_desc,Links multiple servers or provides access to network services. Accepts dedicated upgrade modules.
+item_net_switch_comment,
+item_ns_upgrade_module0_name,Firewall Upgrade
+item_ns_upgrade_module0_desc,A network switch upgrade. Its effect is planned for future development.
+item_ns_upgrade_module0_comment,
+item_ns_upgrade_module1_name,High-speed Connection Upgrade
+item_ns_upgrade_module1_desc,A network switch upgrade. Its effect is planned for future development.
+item_ns_upgrade_module1_comment,
+item_ns_upgrade_module2_name,Network Access Upgrade
+item_ns_upgrade_module2_desc,Enables network access as a server recipe condition.
+item_ns_upgrade_module2_comment,
+item_ns_upgrade_module3_name,Packet Disguise Upgrade
+item_ns_upgrade_module3_desc,Enables packet disguise as a server recipe condition.
+item_ns_upgrade_module3_comment,
+net_switch_stat_upgrade,Installed: {0}
+compiler_multiple_regularizers,At most one regularization component is allowed.
+ai_task_sensory_analysis,Perception
+ai_task_intelligence_intrusion,Malicious
+server_invalid_production_model,The trained AI has invalid attributes or insufficient durability.
+server_no_recipe,No matching production task. Sensory analysis tasks are not implemented yet.
+server_choose_gene,Insert an empty complex data container and a seed. Choose a gene entry.
+server_network_upgrades_required,The switch requires Network Access and Packet Disguise upgrades.
+server_gene_panel,Gene data
+server_choose_gene_button,Choose data entry
+server_change_gene_button,Change data entry
+server_gene_unselected,No gene entry selected
+server_gene_none,The seed has no extractable unlocked traits.
+complex_data_named,Complex Data Container ({0})
+item_part_regularization_name,Regularization Component
+item_part_regularization_desc,Increases predicted initial durability by 20% before final rounding. At most one.
+item_part_regularization_comment,
+item_btc_normal_unfinish_name,Unfinished Normal BTC
+item_btc_normal_unfinish_desc,A computing AI can finish this BTC. Acquisition is planned for future development.
+item_btc_normal_unfinish_comment,
+item_btc_rare_unfinish_name,Unfinished Rare BTC
+item_btc_rare_unfinish_desc,A computing AI can finish this BTC with more work. Acquisition is planned for future development.
+item_btc_rare_unfinish_comment,
+item_btc_normal_name,Normal BTC
+item_btc_normal_desc,A normal digital currency processed by a computing AI.
+item_btc_normal_comment,
+item_btc_rare_name,Rare BTC
+item_btc_rare_desc,A rare digital currency requiring more processing work.
+item_btc_rare_comment,
+item_complex_data_name,Complex Data Container (Empty)
+item_complex_data_desc,Holds one gene entry compatible with native DNA disks. Written data starts with four uses and disappears when exhausted.
+item_complex_data_comment,
+item_folder_empty_name,Folder (Empty)
+item_folder_empty_desc,An intelligence malicious AI can write classified intelligence into this folder.
+item_folder_empty_comment,
+item_folder_security_name,Folder (Classified Intelligence)
+item_folder_security_desc,Contains classified intelligence obtained by an intelligence malicious AI.
+item_folder_security_comment,
+server_data_container,Data Container
+server_data_container_missing,Extraction paused: install a usable data container.
+server_data_container_full,Extraction paused: insufficient free data-container space.
+data_content_amount,Stored data: {0}/{1}
+data_carrier_amount,Remaining data: {0}/{1}
+server_data_batch,Current batch: {0} data units
+item_dc_common_data_disk_name,Common Data Disk
+item_dc_common_data_disk_desc,A computing or malicious AI can extract its data. The disk remains after extraction.
+item_dc_common_data_disk_comment,
+item_dc_common_data_disk_shabby_name,Shabby Common Data Disk
+item_dc_common_data_disk_shabby_desc,A worn disk containing less recoverable data.
+item_dc_common_data_disk_shabby_comment,
+item_dc_enterprise_databox_name,Enterprise Data Box
+item_dc_enterprise_databox_desc,Stores corporate data for batch extraction by a computing or malicious AI.
+item_dc_enterprise_databox_comment,
+item_dc_enterprise_databox_shabby_name,Shabby Enterprise Data Box
+item_dc_enterprise_databox_shabby_desc,Partly damaged data remains recoverable. The empty box retains salvage value.
+item_dc_enterprise_databox_shabby_comment,
+item_dc_military_terminal_name,Military Terminal
+item_dc_military_terminal_desc,Protected data requires an malicious AI. No network switch upgrades are required.
+item_dc_military_terminal_comment,
+item_dc_military_terminal_shabby_name,Shabby Military Terminal
+item_dc_military_terminal_shabby_desc,A worn military device whose remaining data still requires an malicious AI.
+item_dc_military_terminal_shabby_comment,
+item_data_container_name,Data Container
+item_data_container_desc,Stores 60 units of parsed data. Install in the server data container bay. Can be replaced during extraction.
+item_data_container_comment,
+item_hypo_data_container_name,High Capacity Data Container
+item_hypo_data_container_desc,Stores 225 units of parsed data. Data extracted from different carriers can be mixed.
+item_hypo_data_container_comment,
+night_shift_service_title,Electronics Industry II
+night_shift_service_subtitle,Electronics Industry
+night_shift_service_description,"Contact Night Shift for weekly model-making equipment, code materials and training data. Includes a disk writer and compiler with 30-charge batteries, encoder/decoder source chips, a basic grid, four blank disks and a 60/60 data container. Requires Electronics Industry I. Entry trader visits continue; unclaimed gifts are retained for F9 collection."
+night_shift_service_owned,Night Shift contacted. Weekly visits; undelivered gifts are retained.
+server_insufficient_training_data,Not enough training data: replace the data container
+server_training_data_remaining,Data still required for training: {0}
+item_capacitors_name,Capacitors
+item_capacitors_desc,Capacitor components for electronic devices.
+item_capacitors_comment,
+item_gold_finger_name,Gold Fingers
+item_gold_finger_desc,Gold-plated contacts for electronic circuits.
+item_gold_finger_comment,
+item_pcb_normal_name,Common Circuit Board
+item_pcb_normal_desc,A common printed circuit board.
+item_pcb_normal_comment,
+item_pcb_rare_name,Rare Circuit Board
+item_pcb_rare_desc,A precision-made printed circuit board.
+item_pcb_rare_comment,
+item_gpu_memory_normal_name,Common Graphics Memory
+item_gpu_memory_normal_desc,A common graphics memory chip.
+item_gpu_memory_normal_comment,
+item_gpu_memory_rare_name,Rare Graphics Memory
+item_gpu_memory_rare_desc,A high-specification graphics memory chip.
+item_gpu_memory_rare_comment,
+item_heat_plate_name,Heat Sink
+item_heat_plate_desc,A metal plate that conducts and disperses heat.
+item_heat_plate_comment,
+item_liquid_cooler_name,Liquid Cooler
+item_liquid_cooler_desc,An electronic cooling component that circulates liquid.
+item_liquid_cooler_comment,
+item_smart_motor_name,Smart Motor
+item_smart_motor_desc,A motor with electronic control components.
+item_smart_motor_comment,
+item_dc_braininterface_name,Brain Interface
+item_dc_braininterface_desc,A carrier of neural interaction records. Computing or malicious AI can extract its data while leaving the device intact.
+item_dc_braininterface_comment,
+item_dc_eyeball_name,Electronic Eyeball
+item_dc_eyeball_desc,A carrier of visual records. Computing or malicious AI can extract its data while leaving the device intact.
+item_dc_eyeball_comment,
+item_dc_idcard_name,Identity Card
+item_dc_idcard_desc,A carrier of identity records. Computing or malicious AI can extract its data while leaving the card intact.
+item_dc_idcard_comment,
+item_dc_suspeciousdisk_name,Suspicious Disk
+item_dc_suspeciousdisk_desc,A disk of unknown origin. Computing or malicious AI can extract its data while leaving the disk intact.
+item_dc_suspeciousdisk_comment,
+item_virus_name,Virus Disk
+item_virus_desc,A disk containing a suspicious program.
+item_virus_comment,
+item_folder_revol_name,Revolutionary Folder
+item_folder_revol_desc,A folder of revolutionary documents.
+item_folder_revol_comment,
+electronics_industry,Electronics Industry
+electronics_trader_service_title,Electronics Industry I
+electronics_trader_service_description,"Weekly standard CPUs, entry GPUs and RAM, server chassis, a 60/60 data container, three unfinished normal BTC and trained/untrained computing AI. Includes a server with a 50-charge battery and 60/60 container, a standard CPU, entry GPU, 8GB RAM and three small trained computing AI. Train unfinished AI directly in the server using power and container data. Recharge batteries through native channels. Unclaimed gifts are retained for F9 collection."
+electronics_trader_service_owned,"Electronics trader contacted. Weekly starter hardware, BTC inputs and replacement models."
+server_stat_memory_expansion,Memory expansion: {0}/{1}
+server_decoding_progress_tooltip,Decoding progress: {0:0.##}/{1:0.##} ({2:0.#}%)
+server_extraction_progress_tooltip,Extraction progress: {0:0.##}/{1:0.##} ({2:0.#}%)
+compiler_base_locked,[Locked — remove the code components first]
+gpu_power_modules_missing,All power modules are missing
+gpu_calculator_title,GPU attribute calculator
+gpu_calculator_hint,Adjust defect counts with +/- buttons. Uses this core and power connector. Contacts do not affect performance.
+gpu_calculator_interface_missing,Power connector missing
+gpu_calculator_modules_missing,Missing power modules
+gpu_calculator_memory_missing,Missing memory chips
+gpu_calculator_memory_wrong,Mismatched memory chips
+gpu_calculator_memory_slow,Low-frequency memory chips
+gpu_calculator_question,Challenge
+gpu_calculator_compute,Effective compute: {0:0.##}
+gpu_calculator_power,Effective power draw: {0}
+gpu_calculator_compute_invalid,Effective compute: —
+gpu_calculator_power_invalid,Effective power draw: —
+gpu_calculator_supply,Power connector missing: {0}
+gpu_calculator_yes,Yes
+gpu_calculator_no,No
+gpu_calculator_price,Estimated value: {0} credits
+gpu_calculator_confront,Challenge selected claims
+gpu_calculator_invalid,Enter valid counts. Total memory defects cannot exceed the slot count.
+gpu_goldfinger_missing,Missing edge contacts
+gpu_question_goldfinger,Edge contacts
+gpu_question_compute,Compute power
+gpu_question_power,Power consumption
+gpu_question_supply,Power connector
+gpu_confront_title,Question GPU attributes
+gpu_calculator_close,Close
+gpu_calculator_match,Match
+gpu_value_penalty,{0} (Value: -{1}%)
+gpu_confront_discount,Exposed lie discount
+gpu_label_goldfinger,GPU edge contacts
+gpu_goldfinger_normal,Edge contacts normal
+gpu_goldfinger_missing_value,Missing edge contacts (Value: -{0}%)
+gpu_power_supply_missing_value,Power connector missing (Value: -{0}%)
+item_electronic_scanner_name,Electronic analyzer
+item_electronic_scanner_desc,Use on inspectable electronics to reveal their true attributes. Match corrects labels on purchased items.
+item_electronic_scanner_comment,Labels can change. Circuits tell the truth.
+electronic_scanner_result,Test results
+electronic_scanner_match,Match labels
+electronic_scanner_labels,[Labeled]
+electronic_scanner_matched,Labels matched
+electronic_scanner_mismatched,Labels differ
+electronic_scanner_close,Close
+item_data_collector_name,Data Storage Unit
+item_data_collector_desc,Holds data containers and can connect to a server through a network switch.
+data_collector_expansion,Capacity expansion contribution: {0}/{1} blank disks
+item_data_collector_comment,
+
+item_brain_server_name,Brain in a Vat
+item_brain_server_desc,A living brain with vast memory and some computing power.
+item_brain_server_comment,Oh god... who did this to it......
+server_blood,Blood
+server_water,Liquid container
+brain_blood_amount,Normal blood: {0}/1000 ml
+brain_blue_blood_amount,Blue blood: {0}/1000ml
+brain_dead,Dead
+brain_no_blood,Blood shortage
+brain_no_water,Water shortage
+brain_no_power,Oxygen shortage
+item_abandoned_disk_name,Abandoned Floppy Disk
+item_abandoned_disk_desc,An abandoned floppy disk. No one knows what is on it; perhaps there is nothing left.
+item_abandoned_disk_comment,
+item_invalid_accesscard_name,Invalid Access Card
+item_invalid_accesscard_desc,A defaced Astar access card that no longer works.
+item_invalid_accesscard_comment,
+item_wave_sampler_name,Audio Sampler
+item_wave_sampler_desc,A sampler used to capture sounds for music synthesis.
+item_wave_sampler_comment,
+item_old_gamer_name,Old Game Console
+item_old_gamer_desc,An ancient cartridge-based game console that no longer works.
+item_old_gamer_comment,
+item_solar_ar_name,Holographic Solar System
+item_solar_ar_desc,A holographic projector of the solar system. There will always be someone feeling nostalgic.
+item_solar_ar_comment,
+electronic_parts,Electronic Parts
+encrypted_carrier,Encrypted
+gpu,GPU
+crypto,Crypto
+
+event_crypto_boom_news,A New Cryptocurrency Boom
+event_crypto_boom_display,Crypto Boom
+event_crypto_boom_desc,A new cryptocurrency boom is sweeping the station. GPU prices +35%, BTC prices +50%.
+event_astar_breakthrough_news,Astar Announces Major AI Research Breakthrough
+event_astar_breakthrough_display,AGI Breakthrough
+event_astar_breakthrough_desc,Astar has announced a major AI research breakthrough. With AGI seemingly within reach, market enthusiasm is soaring. Electronics prices +40%, data container prices +40%.
+event_electronics_surge_news,Electronics Prices Surge Without Explanation
+event_electronics_surge_display,Electronics Price Surge
+event_electronics_surge_desc,Electronics prices are rising abnormally for unknown reasons. Electronics prices +25%.
+event_crypto_crash_news,Panic Selling Hits the Cryptocurrency Market
+event_crypto_crash_display,Crypto Panic
+event_crypto_crash_desc,Panic selling has gripped the cryptocurrency market. BTC prices -30%.
+event_ai_fear_news,Aug Activity Fuels Fears of Autonomous AI
+event_ai_fear_display,Autonomous AI Fears
+event_ai_fear_desc,Aug activity is becoming increasingly frequent, and public fears of autonomous AI are growing. Electronics prices -30%, data container prices -20%.
+
+item_part_residual_name,Residual Bridge
+item_part_residual_desc,Only the two cells one step beyond the open tips of the five-cell C may connect an actual linked encoder-decoder pair: whole-model training work x0.8 and memory x1.1. Other contacts do not count. Applies once.
+item_part_residual_comment,Another path to the same result.
+item_part_batch_name,Batch Processor
+item_part_batch_desc,Directly touching processors form a group with adjacent unique encoders. The largest group with at least two encoders grants training work x1.3 and that many recipe attempts per night.
+item_part_batch_comment,Put spare compute to work.
+ai_stat_batch,Batch processing: {0} attempts/night
+ai_trait_residual,Residual Path
+ai_trait_batch,Batch Processing
+ai_trait_ushape,U-shaped Architecture
+ai_trait_heavyencoder,Heavy Encoder
+ai_trait_highrank,High-rank Architecture
+ai_trait_deepfeedback,Deep Feedback
+ai_trait_heavydecoder,Heavy Decoder
+
+terminal_batch_limit,Recipe attempts per night: {0}
+ai_stat_trait,{0}: {1}
+ai_effect_residual,Training work x{0:0.##}; memory x{1:0.##}
+ai_effect_ushape,Compute bonus x{0:0.##}
+ai_effect_heavyencoder,Compute bonus x{0:0.##}; memory x{1:0.##}
+ai_effect_highrank,Durability x{0:0.##}; training work x{1:0.##}
+ai_effect_deepfeedback,Training data x{0:0.##}; training work x{1:0.##}
+ai_effect_heavydecoder,Compute bonus x{0:0.##}; memory x{1:0.##}
+item_quorra_wanted_name,Wanted notice left by the Security Department
+item_quorra_number_name,Quorra's phone card
+item_quorra_number_desc,The contact card Quorra gave you. Click to read.
+manufacturer_astar,Astar Intelligence
+manufacturer_prism,Prism Semiconductors
+manufacturer_silicon,Silicon Semiconductors

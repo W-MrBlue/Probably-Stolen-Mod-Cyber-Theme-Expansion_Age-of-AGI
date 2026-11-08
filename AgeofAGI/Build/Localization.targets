@@ -1,0 +1,67 @@
+<Project>
+  <UsingTask TaskName="MergeModLocalization" TaskFactory="RoslynCodeTaskFactory"
+             AssemblyFile="$(MSBuildToolsPath)/Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <MainFile ParameterType="System.String" Required="true" />
+      <NpcFile ParameterType="System.String" Required="true" />
+      <BooksFile ParameterType="System.String" Required="true" />
+      <OutputFile ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System" />
+      <Using Namespace="System.IO" />
+      <Using Namespace="System.Text" />
+      <Using Namespace="System.Collections.Generic" />
+      <Code Type="Fragment" Language="cs"><![CDATA[
+        var lines = new List<string>();
+        var origins = new Dictionary<string, string>(StringComparer.Ordinal);
+        foreach (string source in new[] { MainFile, NpcFile, BooksFile })
+        {
+            if (source != MainFile && !File.Exists(source)) continue;
+            int lineNumber = 0;
+            foreach (string raw in File.ReadAllLines(source, Encoding.UTF8))
+            {
+                lineNumber++;
+                string line = raw.TrimStart('\uFEFF');
+                if (!string.IsNullOrWhiteSpace(line) && !line.TrimStart().StartsWith("#", StringComparison.Ordinal))
+                {
+                    int separator = line.IndexOf(',');
+                    string key = separator < 0 ? "" : line.Substring(0, separator).Trim();
+                    string origin = source + ":" + lineNumber;
+                    if (key.Length == 0)
+                    {
+                        Log.LogError("{0}: Expected a localization key followed by a comma.", origin);
+                        return false;
+                    }
+                    string previous;
+                    if (origins.TryGetValue(key, out previous))
+                    {
+                        Log.LogError("{0}: Duplicate localization key '{1}'; first defined at {2}.", origin, key, previous);
+                        return false;
+                    }
+                    origins.Add(key, origin);
+                }
+                lines.Add(line);
+            }
+            lines.Add("");
+        }
+        Directory.CreateDirectory(Path.GetDirectoryName(OutputFile));
+        File.WriteAllLines(OutputFile, lines, new UTF8Encoding(false));
+      ]]></Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="MergeModLocalizations" AfterTargets="CopyFilesToOutputDirectory"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <ItemGroup>
+      <ModLocaleSource Include="$(MSBuildProjectDirectory)/Localization/*.csv" />
+    </ItemGroup>
+    <MergeModLocalization MainFile="%(ModLocaleSource.FullPath)"
+                          NpcFile="$(MSBuildProjectDirectory)/Localization/Npcs/%(ModLocaleSource.Filename).csv"
+                          BooksFile="$(MSBuildProjectDirectory)/Localization/Books/%(ModLocaleSource.Filename).csv"
+                          OutputFile="$(TargetDir)Localization/%(ModLocaleSource.Filename).csv" />
+    <ItemGroup>
+      <FileWrites Include="@(ModLocaleSource->'$(TargetDir)Localization/%(Filename).csv')" />
+    </ItemGroup>
+  </Target>
+</Project>

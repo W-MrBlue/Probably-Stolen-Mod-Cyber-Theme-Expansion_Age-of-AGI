@@ -1,0 +1,2 @@
+id,trainedOutputId,coolingMultiplier,cpuUpgradeUnitsStep1,cpuUpgradeUnitsStep2,gpuUpgradeUnitsPerStep,intelligenceWork,bioBaseWork,bioComplexityWork,dataUnitsPer8Gb,dataWorkPerUnit,memoryUpgradeUnits
+age_of_agi.serverbox,age_of_agi.ai_trained,1,2,4,5,480,40,20,10,4,8

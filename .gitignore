@@ -1,0 +1,51 @@
+# Artwork sources and exported visual assets
+/AgeofAGI/art_src/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tga
+*.tif
+*.tiff
+*.dds
+*.svg
+*.ico
+*.psd
+*.psb
+*.ase
+*.aseprite
+*.kra
+*.ora
+*.xcf
+*.ai
+*.eps
+*.blend
+*.fbx
+*.obj
+
+# Keep configuration files such as Textures/gpu_details/pos.csv trackable.
+
+# Build output
+**/bin/
+**/obj/
+
+# Local reference documents and personal design files
+/AgeofAGI/docs_4_me/
+
+# Local editor state
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db

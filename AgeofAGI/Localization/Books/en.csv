@@ -1,0 +1,24 @@
+# GPU appraisal guide. One physical line per key; use literal \n for line breaks.
+book_gpu_guide_publisher,ASTAR Technologies Ltd.
+book_gpu_guide_title,GPU Appraisal Guide
+book_gpu_guide_intro,A graphics processing unit (GPU) renders images and performs parallel matrix calculations. This guide explains how to inspect its basic attributes and working condition.
+book_gpu_guide_status_heading,Working Condition
+book_gpu_guide_status_intro,"A GPU's working condition depends on its contacts, core and power connector."
+book_gpu_guide_contacts_heading,Contact Problems
+book_gpu_guide_contacts_issues,Possible problems:\n-Incorrect contact material\n-Missing contacts
+book_gpu_guide_power_interface_heading,Power Connector Problems
+book_gpu_guide_power_interface_issues,Possible problems:\n-Missing power connector
+book_gpu_guide_unusable_warning,Any of these problems makes the GPU unusable.
+book_gpu_guide_performance_heading,Performance Inspection
+book_gpu_guide_performance_intro,GPU performance consists of compute power and energy consumption:
+book_gpu_guide_performance_formula,"  -Actual compute = Rated compute*(Underclocked memory count*0.8+Normal memory count*1)/15\n  -Actual power = Rated power*8/Power module count"
+book_gpu_guide_memory_lowfrequency_caption,Underclocked memory
+book_gpu_guide_memory_mismatch_caption,Mismatched memory
+book_gpu_guide_memory_normal_caption,Normal memory
+book_gpu_guide_power_module_caption,Normal power module
+book_gpu_guide_core_heading,Core Inspection
+book_gpu_guide_core_nut_caption,"""Nutri-Fruit"" GPU"
+book_gpu_guide_core_normal_caption,Standard GPU
+book_gpu_guide_core_vector_caption,"""Vector"" GPU"
+book_gpu_guide_core_matrix_caption,"""Matrix"" GPU"
+book_gpu_guide_core_mismatch_warning,A GPU cannot be used if its core does not match its model.

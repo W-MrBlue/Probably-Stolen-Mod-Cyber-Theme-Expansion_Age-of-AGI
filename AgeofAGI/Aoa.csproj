@@ -1,0 +1,170 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AgeOfAgi</RootNamespace>
+    <DeployModOnBuild Condition="'$(DeployModOnBuild)' == ''">true</DeployModOnBuild>
+    <ModDeployDirectory>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\..\Mods\AgeofAGI'))</ModDeployDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Exact retired configuration paths only; do not remove unrelated mod data. -->
+    <RetiredDataAsset Include="Data\Definitions\data_content.csv" />
+    <RetiredDataAsset Include="Data\electronics_stock_progression.csv" />
+    <RetiredDataAsset Include="Data\electronics_market.csv;Data\electronics_salvage.csv" />
+    <RetiredDataAsset Include="Data\night_shift.json;Data\data_content.csv;Data\Definitions\ai_parts.json;Data\Definitions\base_model.json;Data\Definitions\compiler.json;Data\Definitions\cpu.json;Data\Definitions\disk_writer.json;Data\Definitions\gpu.json;Data\Definitions\machines.json;Data\Definitions\memory.json;Data\Definitions\server.json" />
+    <RetiredItemTexture Include="Textures\Items\common_data_disk.png;Textures\Items\common_data_disk_shabby.png;Textures\Items\enterprise_databox.png;Textures\Items\enterprise_databox_shabby.png;Textures\Items\military_terminal.png;Textures\Items\military_termina_shabby.png" />
+    <RetiredItemTexture Include="Textures\Items\serverbox_stage3.png;Textures\Items\serverbox_stage4.png;Textures\Items\template_placeholder.png" />
+    <RetiredItemTexture Include="Textures\Items\gpu_color_checker.png" />
+    <RetiredNpcTexture Include="Textures\Tasha_V1.png;Textures\npcs\Tasha_V1.png" />
+    <ModRuntimeAsset Include="manifest.xml;Data\**\*;Textures\**\*.png;Textures\**\*.jpg;Sounds\*.wav;Sounds\*.ogg;Sounds\*.mp3;LootTables\*.json;Books\*.json" />
+    <!-- Native UI sprite lookup scans Paper, not icons; keep icon source assets in icons. -->
+    <ModUiIcon Include="Textures\icons\*.png" />
+    <!-- GPU inspection reads Textures directly; the paper editor reads Paper sprites. -->
+    <ModGpuTexture Include="Textures\gpu_details\*.png" />
+    <ModGpuGuideIcon Include="Textures\gpu_details\gpu_guide.png" />
+    <ModScannerTexture Include="Textures\scanner\*.png" />
+    <ModNpcTexture Include="Textures\npcs\*.png;Textures\npcs\*.jpg" />
+    <ModStoryDocumentIcon Include="Textures\npcs\Quorra_wanted_small.png;Textures\npcs\Quorra_number_small.png" />
+    <ModStoryDocumentDetail Include="Textures\npcs\Quorra_wanted.png;Textures\npcs\Quorra_number.png" />
+    <ModRuntimeAsset Include="Textures\gpu_details\pos.csv" />
+    <ModRuntimeAsset Include="preview.png" Condition="Exists('preview.png')" />
+    <None Update="@(ModRuntimeAsset)">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Probably Stolen_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Probably Stolen_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Probably Stolen_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Probably Stolen_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Probably Stolen_Data\Managed\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="RemoveRetiredDataOutput" AfterTargets="CopyFilesToOutputDirectory"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <Delete Files="@(RetiredDataAsset->'$(TargetDir)%(Identity)')" />
+    <Delete Files="@(RetiredItemTexture->'$(TargetDir)%(Identity)')" />
+    <Delete Files="@(RetiredNpcTexture->'$(TargetDir)%(Identity)')" />
+  </Target>
+
+  <Target Name="CopyUiIcons" AfterTargets="CopyFilesToOutputDirectory"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <Copy SourceFiles="@(ModUiIcon)"
+          DestinationFiles="@(ModUiIcon->'$(TargetDir)Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuTexture)"
+          DestinationFiles="@(ModGpuTexture->'$(TargetDir)Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuTexture)"
+          DestinationFiles="@(ModGpuTexture->'$(TargetDir)Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuGuideIcon)"
+          DestinationFiles="@(ModGpuGuideIcon->'$(TargetDir)Textures\Items\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModScannerTexture)"
+          DestinationFiles="@(ModScannerTexture->'$(TargetDir)Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModNpcTexture)"
+          DestinationFiles="@(ModNpcTexture->'$(TargetDir)Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <ItemGroup>
+      <FileWrites Include="@(ModStoryDocumentIcon->'$(TargetDir)Textures\Items\%(Filename)%(Extension)')" />
+      <FileWrites Include="@(ModStoryDocumentDetail->'$(TargetDir)Textures\Paper\%(Filename)%(Extension)')" />
+      <FileWrites Include="@(ModGpuTexture->'$(TargetDir)Textures\Paper\%(Filename)%(Extension)')" />
+      <FileWrites Include="@(ModGpuGuideIcon->'$(TargetDir)Textures\Items\%(Filename)%(Extension)')" />
+      <FileWrites Include="@(ModNpcTexture->'$(TargetDir)Textures\%(Filename)%(Extension)')" />
+    </ItemGroup>
+  </Target>
+
+  <Import Project="Build\Localization.targets" />
+
+  <Target Name="CopyStoryDocuments" AfterTargets="CopyFilesToOutputDirectory"
+          Condition="'$(DesignTimeBuild)' != 'true'">
+    <Copy SourceFiles="@(ModStoryDocumentIcon)"
+          DestinationFiles="@(ModStoryDocumentIcon->'$(TargetDir)Textures\Items\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModStoryDocumentDetail)"
+          DestinationFiles="@(ModStoryDocumentDetail->'$(TargetDir)Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+  </Target>
+
+  <Target Name="DeployMod" AfterTargets="Build" DependsOnTargets="MergeModLocalizations"
+          Condition="'$(DeployModOnBuild)' == 'true' and '$(DesignTimeBuild)' != 'true'">
+    <MakeDir Directories="$(ModDeployDirectory)" />
+    <Delete Files="@(RetiredDataAsset->'$(ModDeployDirectory)\%(Identity)')" />
+    <Delete Files="@(RetiredItemTexture->'$(ModDeployDirectory)\%(Identity)')" />
+    <Delete Files="@(RetiredNpcTexture->'$(ModDeployDirectory)\%(Identity)')" />
+    <Copy SourceFiles="@(ModRuntimeAsset)"
+          DestinationFiles="@(ModRuntimeAsset->'$(ModDeployDirectory)\%(Identity)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModLocaleSource->'$(TargetDir)Localization\%(Filename).csv')"
+          DestinationFiles="@(ModLocaleSource->'$(ModDeployDirectory)\Localization\%(Filename).csv')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModUiIcon)"
+          DestinationFiles="@(ModUiIcon->'$(ModDeployDirectory)\Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModDeployDirectory)"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuTexture)"
+          DestinationFiles="@(ModGpuTexture->'$(ModDeployDirectory)\Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuTexture)"
+          DestinationFiles="@(ModGpuTexture->'$(ModDeployDirectory)\Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModGpuGuideIcon)"
+          DestinationFiles="@(ModGpuGuideIcon->'$(ModDeployDirectory)\Textures\Items\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModScannerTexture)"
+          DestinationFiles="@(ModScannerTexture->'$(ModDeployDirectory)\Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModNpcTexture)"
+          DestinationFiles="@(ModNpcTexture->'$(ModDeployDirectory)\Textures\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModStoryDocumentIcon)"
+          DestinationFiles="@(ModStoryDocumentIcon->'$(ModDeployDirectory)\Textures\Items\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Copy SourceFiles="@(ModStoryDocumentDetail)"
+          DestinationFiles="@(ModStoryDocumentDetail->'$(ModDeployDirectory)\Textures\Paper\%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Message Importance="high" Text="Mod deployed to $(ModDeployDirectory) (DLL, manifest, and runtime assets). Restart the game to load changes." />
+  </Target>
+
+</Project>

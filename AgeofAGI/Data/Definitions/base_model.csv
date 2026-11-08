@@ -1,0 +1,5 @@
+id,gridWidth,gridHeight,memoryMultiplier
+age_of_agi.base_grid,4,6,1
+age_of_agi.base_neural,3,12,2
+age_of_agi.base_tsfm,6,8,4
+age_of_agi.base_jepa,8,12,8

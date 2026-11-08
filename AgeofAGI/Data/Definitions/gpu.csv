@@ -1,0 +1,5 @@
+id,computePower,powerPerCycle,coreSprite
+age_of_agi.gpu0,10,4,gpu_core_nut
+age_of_agi.gpu1,30,6,gpu_core_normal
+age_of_agi.gpu2,50,12,gpu_core_vector
+age_of_agi.gpu3,100,10,gpu_core_matrix

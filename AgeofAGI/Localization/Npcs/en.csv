@@ -1,0 +1,185 @@
+# NPC names and dialogue. Keep each name directly before its dialogue variants.
+
+# electronics_scavenger_buyer_name
+electronics_scavenger_buyer_name,Electronics Scavenger
+electronics_scavenger_buyer_greeting_1,The lower-level recycling pipes are clogged again, and the usable parts are sitting in rust water; show me your old parts and hardware, and I will pay for whatever still runs
+electronics_scavenger_buyer_done_1,This batch should keep me stripping for a while; do you have any other old parts on your counter?
+electronics_scavenger_buyer_greeting_2,I need to repair a stolen lighting circuit tonight; I will take parts, hardware and old data carriers, and I will not ask who owned them
+electronics_scavenger_buyer_done_2,These circuits should survive a few more nights; do you have anything else worth stripping?
+electronics_scavenger_buyer_greeting_3,The recycling depot gave me one night to fill this order; show me whatever old electronics you have, and I will take a look
+electronics_scavenger_buyer_done_3,Count the money while I take the goods; do you have any more old parts to strip?
+
+# repair_shop_buyer_name
+repair_shop_buyer_name,Repair Shop Buyer
+repair_shop_buyer_greeting_1,The repair shop's work orders are piled up to the ceiling; I will inspect whatever parts and hardware you have, and I can include data carriers too
+repair_shop_buyer_done_1,Those work orders finally have a chance; do you have any other equipment to sell for repair?
+repair_shop_buyer_greeting_2,Customers care about working devices, not how little sleep I got last night; show me your usable old parts, and I will pay repair-shop rates
+repair_shop_buyer_done_2,This should be enough to keep my customers quiet; do you have any more equipment worth repairing?
+repair_shop_buyer_greeting_3,The underground clinic's monitoring terminal is down again; this time I need more than parts, so I will take old devices and data carriers too
+repair_shop_buyer_done_3,I will reinstall these tonight; do you have any spare parts left?
+
+# upper_electronics_buyer_name
+upper_electronics_buyer_name,Upper-Level Electronics Dealer
+upper_electronics_buyer_greeting_1,Upper-level showrooms have plenty of new stock but never enough unregistered old goods; show me your electronics, parts and data carriers, and I will buy them together
+upper_electronics_buyer_done_1,This batch will never appear on the official inventory; do you have any other goods to dispose of?
+upper_electronics_buyer_greeting_2,My client wants a complete equipment shipment before tonight's lockdown; origins are too much trouble for the report, so I only care about the goods and their condition
+upper_electronics_buyer_done_2,There is still time for another run before lockdown; do you have anything else I can take?
+upper_electronics_buyer_greeting_3,The corporate purchasing list is always one page longer than the inventory; hardware, parts, old data and ordinary electronics are all open for discussion
+upper_electronics_buyer_done_3,There are still a few empty lines on the list; what else do you have to fill them?
+
+# secondhand_equipment_buyer_name
+secondhand_equipment_buyer_name,Secondhand Equipment Dealer
+secondhand_equipment_buyer_greeting_1,A secondhand device always has another buyer as long as it powers on; I only want hardware this time, so keep the old peripherals and data disks
+secondhand_equipment_buyer_done_1,These can survive another resale cycle; do you have any other hardware to sell?
+secondhand_equipment_buyer_greeting_2,Some buyers want cheap compute rather than factory packaging; CPUs, GPUs, memory and network hardware are all open for offers
+secondhand_equipment_buyer_done_2,No packaging means an easier price discussion; do you have any other used hardware?
+
+# enterprise_computing_service_name
+enterprise_computing_service_name,Enterprise Computing Service
+enterprise_computing_service_greeting_1,Our compute cluster still has spare capacity tonight; hand me your data containers, and I will price both their contents and remaining capacity
+enterprise_computing_service_done_1,This data will connect to the cluster tonight; do you have any other data containers?
+enterprise_computing_service_greeting_2,The client wants data that can immediately connect to the cluster, not an explanation of its origins; show me your data containers, and I will pay for their actual contents
+enterprise_computing_service_done_2,Capacity and contents are now registered; do you have any more data to deliver?
+
+# electronics_seller_name
+electronics_seller_name,Electronic Parts Dealer
+electronics_seller_greeting,I brought a batch of electronics. Take your pick once they are on the counter.
+electronics_seller_greeting_2,Another batch of old equipment came out of storage;I brought it all so you can take a look.
+electronics_seller_greeting_3,Electronics only today;Look over the goods and then we can talk prices.
+
+# advanced_hardware_supplier_name
+advanced_hardware_supplier_name,Advanced Hardware Supplier
+advanced_hardware_supplier_greeting_1,I brought a batch of electronics. Take your pick once they are on the counter.
+advanced_hardware_supplier_greeting_2,This hardware batch just came in;Keep whatever suits you and save me the return trip.
+advanced_hardware_supplier_greeting_3,Need more computing equipment?;I brought some hardware you can inspect here.
+
+# gpu_supplier_name
+gpu_supplier_name,GPU Supplier
+gpu_supplier_greeting,Every card in this batch was tested on a live machine, and every label matches its real specifications; would you like to inspect all four?
+gpu_supplier_greeting_2,All four cards are here;Their labels were checked against the measured results, and you can inspect them yourself.
+gpu_supplier_greeting_3,Just graphics cards on this trip;The labels show their actual condition, so pick what you can use.
+
+# electronics_scavenger_name
+electronics_scavenger_name,Electronics Scavenger
+electronics_scavenger_greeting,Found some electronic parts and old data. Mixed condition. Take a look?
+electronics_scavenger_greeting_2,@native:dialog_scav_greet_2;dialog_scav_offer_2
+electronics_scavenger_greeting_3,@native:dialog_scav_greet_3;dialog_scav_offer_3
+electronics_scavenger_greeting_4,@native:dialog_scav_greet_4;dialog_scav_offer_4
+electronics_scavenger_greeting_5,@native:dialog_scav_greet_5;dialog_scav_offer_5
+electronics_scavenger_greeting_6,@native:dialog_scav_greet_6;dialog_scav_offer_6
+electronics_scavenger_greeting_7,@native:dialog_scav_greet_7;dialog_scav_offer_7
+electronics_scavenger_greeting_8,@native:dialog_scav_greet_8;dialog_scav_offer_8
+electronics_scavenger_greeting_9,@native:dialog_scav_greet_9;dialog_scav_offer_9
+electronics_scavenger_greeting_10,@native:dialog_scav_greet_10;dialog_scav_offer_10
+
+# electronics_petty_thief_name
+electronics_petty_thief_name,Electronics Petty Thief
+electronics_petty_thief_greeting,Got a few electronic parts. Best not ask where they came from.
+electronics_petty_thief_greeting_2,@native:dialog_petty_thief_1;dialog_petty_thief_2
+electronics_petty_thief_greeting_3,@native:dialog_evidence_seller_1;dialog_petty_thief_2
+electronics_petty_thief_greeting_4,@native:dialog_food_thief_2;dialog_shady_pharma_2
+electronics_petty_thief_greeting_5,@native:dialog_thief_1;dialog_petty_thief_2
+
+# electronics_thief_name
+electronics_thief_name,Electronics Thief
+electronics_thief_greeting,Brought some electronics and data. Good connections open better opportunities. See what I have today.
+electronics_thief_greeting_2,@native:dialog_thief_1;dialog_thief_2
+electronics_thief_greeting_3,@native:dialog_criminal_thief_1;dialog_thief_2
+electronics_thief_greeting_4,@native:dialog_evidence_seller_1;dialog_evidence_seller_2
+electronics_thief_greeting_5,@native:dialog_food_thief_2;dialog_shady_pharma_2
+
+# electronics_trader_name
+electronics_trader_name,Electronics Trader
+electronics_trader_greeting,Starter hardware and ready-to-run models. Want to train your own? I have a better unfinished model too.
+electronics_trader_greeting_2,Good to see you again;I brought some starter equipment, so see if anything fills a gap.
+electronics_trader_greeting_3,This week's stock is here;Take your time choosing while I put it on the counter.
+
+# night_shift_name
+night_shift_name,Night Shift
+night_shift_greeting,Just clocked out. Pick what you need. I'll be back next week.
+night_shift_greeting_2,Just finished the night shift;I brought your weekly stock on my way past.
+night_shift_greeting_3,How is business, my friend?;I brought equipment and components, so see what you can use.
+
+# model_engineer_name
+model_engineer_name,Model Engineer
+model_engineer_greeting,I am only registering model-trading requirements for now, and I have no stock yet.
+model_engineer_greeting_2,I can take down your model-trading requirements;There are no models for sale today.
+
+# npc_quorra_unknown_name
+npc_quorra_unknown_name,Unknown Girl
+npc_quorra_intro_dialogue,"Hey, shopkeeper!;No time to explain;I need to hide here!"
+npc_quorra_hide_dialogue,There's no time;I'll hide first!;We'll talk later!;
+npc_quorra_name,Quorra
+npc_quorra_officer_name,Security Officer
+npc_quorra_officer_search,"Hello, shopkeeper;We are searching for a fugitive who escaped from the upper level to the lower level;She looks like this. Have you seen where she went?"
+npc_quorra_officer_doubt,... ...;Are you sure? We just saw her running this way.
+npc_quorra_officer_leave,"All right, sorry to bother you;Good luck with your business."
+npc_quorra_arrest_reaction,"Are you serious? What is wrong with you!"
+npc_quorra_arrest_warning,"Behave yourself;Obstruct us again and even your mother won't be able to protect you!"
+npc_quorra_relief,"Phew, that was close;You weren't actually thinking of turning me in, were you?"
+npc_quorra_contraband,"And looking at the things in your shop... ...;You're the one who ought to be arrested;*Winks mischievously*"
+npc_quorra_server,"You've even got this kind of server;We should have plenty to talk about."
+npc_quorra_card,"*Slides a card across the counter*;I'm Quorra;I'll be staying in the lower level for a while;Call me if you need anything."
+quorra_choice_hide,???
+quorra_choice_report,"She barged in. She's in my shop right now."
+quorra_choice_deny,I don't know
+quorra_choice_deny_again,I really haven't seen her
+
+# Electronics market event clients
+age_of_agi.crypto_boom_fan_name,Crypto Enthusiast
+age_of_agi.crypto_boom_fan_greeting,This has to be the biggest rally in history;Buy a little more today and I will be moving to the upper level tomorrow;I will take every BTC you have.
+age_of_agi.crypto_boom_secondhand_name,Secondhand Speculator
+age_of_agi.crypto_boom_secondhand_greeting,This crypto craze is something else, huh?;Maybe I can make a fortune from it;Show me your Bitcoin and GPUs.
+age_of_agi.crypto_boom_upper_name,Idle Upper-Level Investor
+age_of_agi.crypto_boom_upper_greeting,I told everyone the crypto market would soar;My family never believed me;This time I will prove I was right;Bring out your GPUs and BTC;I will invest in everything you have.
+
+age_of_agi.astar_breakthrough_fan_name,Astar Devotee
+age_of_agi.astar_breakthrough_fan_greeting,Did you see the news?;Astar has made another breakthrough;At this rate, AGI will be here within two years;Then everyone will finally have a good life;I want to do my part too;I will take GPUs, memory, data containers, all of it.
+age_of_agi.astar_breakthrough_investor_name,Cautious Investor
+age_of_agi.astar_breakthrough_investor_greeting,Astar is boasting about AGI again;I do not believe a word of it, but there is real money to be made;GPUs, memory, data containers—I will increase my investment in everything that went up.
+age_of_agi.astar_breakthrough_desperate_name,Desperate Lower-Level Resident
+age_of_agi.astar_breakthrough_desperate_greeting,What the hell is Astar doing? Do they want to destroy humanity?;The human-like augs were bad enough, and now they want general intelligence;If it can do everything, what are people even for?;...;I already lost my job;I hope Astar is telling the truth this time;I have to follow the crowd if I want to eat.
+
+age_of_agi.electronics_surge_enthusiast_name,Electronics Hobbyist
+age_of_agi.electronics_surge_enthusiast_greeting,Life in the lower levels is miserable;Without my collection, there would be nothing to look forward to;Do you have any unusual electronics?;I do not have much money, but I will buy whatever catches my eye.
+age_of_agi.electronics_surge_repair_owner_name,Repair Shop Owner
+age_of_agi.electronics_surge_repair_owner_greeting,This price surge came at a suspicious time;Someone bought up entire crates of repair parts just days ago;Now I cannot find a single working circuit board;I cannot leave my customers' devices sitting here forever;Sell me any electronic parts or old hardware you have;I will repair what I can and strip the rest.
+age_of_agi.electronics_surge_hoarder_name,Upper-Level Electronics Hoarder
+age_of_agi.electronics_surge_hoarder_greeting,While you were hesitating, I already ordered the next batch;Do not tell me this is an abnormal market;If it sells, rising prices are an opportunity;People in the lower levels only see today's price;I am looking at next week;Show me your electronics;If the price is right, I will take the lot.
+
+age_of_agi.crypto_crash_desperate_name,Desperate Crypto Investor
+age_of_agi.crypto_crash_desperate_greeting,It is over. Everything is gone;How could they do this?;They promised I would make money;These BTC are all I have left;Will you buy them?;If you take them all, I will buy some food here too.
+age_of_agi.crypto_crash_angry_upper_name,Angry Crypto Investor
+age_of_agi.crypto_crash_angry_upper_greeting,What a terrible investment;That crook kept telling me how good the market looked;He just wanted to trap me and cash out himself;I have no use for these worthless coins now;Buy the whole lot and I will give you a discount.
+
+age_of_agi.ai_fear_angry_lower_name,Angry Lower-Level Resident
+age_of_agi.ai_fear_angry_lower_greeting,What the hell is Security doing?;I am afraid an aug will grab and assimilate me in the street;And the authorities still allow AI research?;They are courting disaster;I feel dirty just keeping these things;Take whatever you want.
+age_of_agi.ai_fear_data_merchant_name,Data Merchant
+age_of_agi.ai_fear_data_merchant_greeting,Someone is stirring up panic again, linking augs to intelligent AI;Now I am stuck with all this data;See if there is anything you need.
+age_of_agi.ai_fear_astar_researcher_name,Astar Researcher
+age_of_agi.ai_fear_astar_researcher_greeting,The lower levels are so ignorant;Anyone with even a basic education knows augs and autonomous AI are completely different;Our company had to delay product development over this nonsense;Anyway, I no longer need this stock;Buy the whole lot and I will give you a discount.
+
+# Shared buyer budget and GPU inspection responses
+electronics_buyer_available_credits,I currently have {0} credits available.
+gpu_calculator_confront_success,You're right;I'll lower the price for you.
+gpu_calculator_confront_thanks,Really?;Thanks for letting me know.
+gpu_calculator_confront_failed,What do you mean?;Take another look.
+
+# Inactive names/dialogue retained as editable content; no runtime visit routes
+
+electronics_buyer_name,Electronics Technician
+electronics_buyer_greeting,I buy electronic hardware, code components and data goods. Working AI models are welcome too, while my budget lasts.
+
+electronics_professional_name,Electronics Procurement Engineer
+electronics_professional_greeting,I am sourcing electronic equipment and models. All purchases share one budget. Show me your stock.
+
+electronics_seller_advanced_name,Advanced Electronics Dealer
+
+data_engineer_name,Data Engineer
+data_engineer_greeting,A recent project needs a large amount of data;My budget is {0} credits.;I also brought two empty data containers for sale.
+
+data_engineer_advanced_name,Senior Data Engineer
+data_engineer_advanced_greeting,A recent project needs a large amount of data;My budget is {0} credits.;I also brought two empty data containers for sale.
+
+cloud_provider_name,Cloud Service Provider
+cloud_provider_greeting,Our new AI product needs a large amount of data. I will buy all the data you have;My budget is {0} credits.;I also brought two empty data containers for sale.

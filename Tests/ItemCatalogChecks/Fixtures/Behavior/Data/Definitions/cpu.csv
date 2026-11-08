@@ -1,0 +1,4 @@
+id,powerBoostRate,powerPerCycle
+age_of_agi.cpu0,120,2
+age_of_agi.cpu1,150,3
+age_of_agi.cpu2,300,5

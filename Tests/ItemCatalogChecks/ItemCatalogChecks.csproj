@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Test inputs are independent of the editable mod balance tables. -->
+    <EmbeddedResource Include="Fixtures\Behavior\**\*.csv">
+      <LogicalName>BehaviorFixtures/%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Exercise the actual native recipe/filter code with substituted scene/UI APIs. -->
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CraftingRecipe.cs" Link="Native\CraftingRecipe.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CraftingFilter.cs" Link="Native\CraftingFilter.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CraftingIdentifierFilter.cs" Link="Native\CraftingIdentifierFilter.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CraftingCustomFilter.cs" Link="Native\CraftingCustomFilter.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CraftingTagsFilter.cs" Link="Native\CraftingTagsFilter.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\CommonTooltipHelper.cs" Link="Native\CommonTooltipHelper.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\ContainerHelper.cs" Link="Native\ContainerHelper.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\NetworkUpgradeLayout.cs" Link="Native\NetworkUpgradeLayout.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\RandomClientPool.cs" Link="Native\RandomClientPool.cs" />
+    <Compile Include="..\..\..\gamecode_ref\Assembly-CSharp\LabelerHelper.cs" Link="Native\LabelerHelper.cs" />
+    <Compile Include="..\..\AgeofAGI\Items\**\*.cs" Link="Items\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\AgeofAGI\AgeOfAgiMod.cs" Link="AgeOfAgiMod.cs" />
+    <Compile Include="..\..\AgeofAGI\Debugging\**\*.cs" Link="Debugging\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\AgeofAGI\Npcs\**\*.cs" Link="Npcs\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\AgeofAGI\ModConstants.cs" Link="ModConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\Probably Stolen_Data\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Probably Stolen_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

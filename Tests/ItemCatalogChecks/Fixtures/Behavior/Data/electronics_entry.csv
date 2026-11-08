@@ -1,0 +1,16 @@
+section,itemIds,count,chance,dataAmount,minimumProductionSpeed,memoryGb,computeBonus,durability,trainingWork,trainingData
+gifts,age_of_agi.serverbox,1,100,60,0,0,0,0,0,0
+gifts,age_of_agi.cpu0,1,100,-1,0,0,0,0,0,0
+gifts,age_of_agi.gpu0,1,100,-1,0,0,0,0,0,0
+gifts,age_of_agi.mem0,1,100,-1,0,0,0,0,0,0
+gifts,age_of_agi.ai_trained,1,100,-1,0,2,10,3,0,0
+gifts,age_of_agi.ai_trained,1,100,-1,0,4,20,4,0,0
+gifts,age_of_agi.ai_trained,1,100,-1,0,8,30,5,0,0
+stock,age_of_agi.serverbox,1,100,-1,0,0,0,0,0,0
+stock,age_of_agi.cpu0,1,100,-1,0,0,0,0,0,0
+stock,age_of_agi.gpu0,1,100,-1,0,0,0,0,0,0
+stock,age_of_agi.mem0,1,100,-1,0,0,0,0,0,0
+stock,age_of_agi.data_container,1,100,60,0,0,0,0,0,0
+stock,age_of_agi.btc_normal_unfinish,3,100,-1,0,0,0,0,0,0
+stock,age_of_agi.ai_trained,1,100,-1,0,4,20,4,0,0
+stock,age_of_agi.ai_untrained,1,100,-1,0,6,40,7,120,30

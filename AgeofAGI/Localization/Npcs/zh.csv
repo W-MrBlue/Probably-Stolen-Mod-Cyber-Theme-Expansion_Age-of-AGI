@@ -1,0 +1,184 @@
+# NPC names and dialogue. Keep each name directly before its dialogue variants.
+
+# electronics_scavenger_buyer_name
+electronics_scavenger_buyer_name,电子拾荒者
+electronics_scavenger_buyer_greeting_1,家里的老电器又坏了;你这里有零件卖吗；我的预算不多;能用就行
+electronics_scavenger_buyer_done_1,这应该够了;还有别的事吗
+electronics_scavenger_buyer_greeting_2,最近电子产品的行情越来越好了;垃圾处理厂的回收价都变高了;你这里有什么电子产品想出手吗
+electronics_scavenger_buyer_done_2,好的
+electronics_scavenger_buyer_greeting_3,一个拾荒者告诉我能从电子零件里炼金;真的假的；我也想弄一点来试试;你这里有吗
+electronics_scavenger_buyer_done_3,很好；希望能拆点有用的东西出来
+
+# repair_shop_buyer_name
+repair_shop_buyer_name,维修店采购员
+repair_shop_buyer_greeting_1,维修店的工单已经叠到天花板了;零件和硬件有多少我要多少
+repair_shop_buyer_done_1,好的;你还有其他要出手的货吗
+repair_shop_buyer_greeting_2,不知道A星怎么搞的，最近这批货故障率高得出奇；店里的零件已经就用完了；现在需要大量电子产品来补上维修缺口；
+repair_shop_buyer_done_2,这应该够了；还有别的事吗
+repair_shop_buyer_greeting_3,我在这家空间站上做维修业务；你这里有什么电子产品要出手吗
+repair_shop_buyer_done_3,不错；还有要卖的吗；
+
+# upper_electronics_buyer_name
+upper_electronics_buyer_name,上层电子产品商
+upper_electronics_buyer_greeting_1,你好，我在上层做电子产品供货业务;需要采购大量的电子产品；
+upper_electronics_buyer_done_1,看起来没问题
+upper_electronics_buyer_greeting_2,我的客户想在这周补齐一批设备;但是来源写进报表太麻烦了；听说你这里出售多种电子产品;都拿出来给我看看；
+upper_electronics_buyer_done_2,很好；还有别的吗
+upper_electronics_buyer_greeting_3,公司又下了新的采购清单;但是现在上层区供应紧张；我听说你这里卖电子产品;能用的我全要了；
+upper_electronics_buyer_done_3,我很满意；还有要卖的吗
+
+# secondhand_equipment_buyer_name
+secondhand_equipment_buyer_name,二手设备商
+secondhand_equipment_buyer_greeting_1,我在这空间站经营二手设备买卖；你有淘汰下来的设备我都可以买下；
+secondhand_equipment_buyer_done_1,合作愉快;你还有其他硬件要出手吗
+secondhand_equipment_buyer_greeting_2,沙里淘金，懂吗；你这里换下来的设备我都要;无论好坏
+secondhand_equipment_buyer_done_2,很好；还有别的吗
+
+# enterprise_computing_service_name
+enterprise_computing_service_name,企业计算服务商
+enterprise_computing_service_greeting_1,我们的计算集群最近出现了数据缺口；你这里的数据容器有多少我要多少
+enterprise_computing_service_done_1,太好了；这批数据应该今晚就能接入集群；你还有多的吗
+enterprise_computing_service_greeting_2,你好，我们为AI公司提供多种多样的计算服务；但是最近数据非常不够用；听说你这里数据储备充足；拿出来看看；
+enterprise_computing_service_done_2,很好；还有别的事吗
+
+# electronics_seller_name
+electronics_seller_name,电子零件商
+electronics_seller_greeting,我这里有些不用的电子设备；你有什么需要的吗
+electronics_seller_greeting_2,仓库又腾出了一批旧设备；挑挑看
+electronics_seller_greeting_3,需要电子设备吗；我这里有一些
+
+# advanced_hardware_supplier_name
+advanced_hardware_supplier_name,高级硬件供货商
+advanced_hardware_supplier_greeting_1,我这里有些不用的电子设备，你有什么需要的吗。
+advanced_hardware_supplier_greeting_2,这些东西你在普通市场可见不到；错过了可就没下次了；
+advanced_hardware_supplier_greeting_3,我带了一批高端硬件过来；要什么自己挑吧；先说好；价钱可不便宜
+
+# gpu_supplier_name
+gpu_supplier_name,显卡供货商
+gpu_supplier_greeting,店长你好啊；听说你最近在经营计算业务；需要显卡吗
+gpu_supplier_greeting_2,我这里有各种各样的显卡；要看看吗；
+gpu_supplier_greeting_3,缺卡吗；我这里有一些；
+
+# electronics_scavenger_name
+electronics_scavenger_name,拾荒者
+electronics_scavenger_greeting,@native:dialog_scav_greet_1
+electronics_scavenger_greeting_2,@native:dialog_scav_greet_2;dialog_scav_offer_2
+electronics_scavenger_greeting_3,@native:dialog_scav_greet_3;dialog_scav_offer_3
+electronics_scavenger_greeting_4,@native:dialog_scav_greet_4;dialog_scav_offer_4
+electronics_scavenger_greeting_5,@native:dialog_scav_greet_5;dialog_scav_offer_5
+electronics_scavenger_greeting_6,@native:dialog_scav_greet_6;dialog_scav_offer_6
+electronics_scavenger_greeting_7,@native:dialog_scav_greet_7;dialog_scav_offer_7
+electronics_scavenger_greeting_8,@native:dialog_scav_greet_8;dialog_scav_offer_8
+electronics_scavenger_greeting_9,@native:dialog_scav_greet_9;dialog_scav_offer_9
+electronics_scavenger_greeting_10,@native:dialog_scav_greet_10;dialog_scav_offer_10
+
+# electronics_petty_thief_name
+electronics_petty_thief_name,扒手
+electronics_petty_thief_greeting,@native:dialog_petty_thief_1
+electronics_petty_thief_greeting_2,@native:dialog_petty_thief_1;dialog_petty_thief_2
+electronics_petty_thief_greeting_4,@native:dialog_food_thief_2;dialog_shady_pharma_2
+electronics_petty_thief_greeting_5,@native:dialog_thief_1;dialog_petty_thief_2
+
+# electronics_thief_name
+electronics_thief_name,小偷
+electronics_thief_greeting,@native:dialog_thief_1
+electronics_thief_greeting_2,@native:dialog_thief_1;dialog_thief_2
+electronics_thief_greeting_3,@native:dialog_criminal_thief_1;dialog_thief_2
+electronics_thief_greeting_5,@native:dialog_food_thief_2;dialog_shady_pharma_2
+
+# electronics_trader_name
+electronics_trader_name,退休电子商人
+electronics_trader_greeting,我这里有些东西不用了;有需要的吗
+electronics_trader_greeting_2,我带了些入门设备;看看有没有你缺的
+electronics_trader_greeting_3,这周的货带来了
+
+# night_shift_name
+night_shift_name,夜班
+night_shift_greeting,好久不见，我的朋友;有什么想买的吗
+night_shift_greeting_2,店长您好啊；想买些什么吗
+night_shift_greeting_3,下层区偶尔来逛逛还不错；当然......；只是偶尔；咳咳；看看这些吧，有什么想买的吗
+
+# model_engineer_name
+model_engineer_name,模型工程师
+model_engineer_greeting,我现在只登记模型交易需求，暂时没有货。
+model_engineer_greeting_2,模型交易的需求我可以先记下；今天还没有可供出售的模型
+
+# npc_quorra_unknown_name
+npc_quorra_unknown_name,未知女孩
+npc_quorra_intro_dialogue,嘿，店主！；来不及解释了；我得在你这里躲一下！
+npc_quorra_hide_dialogue,没时间了；我先躲一下！；等下再说!；
+npc_quorra_name,葵拉
+npc_quorra_officer_name,治安官
+npc_quorra_officer_search,你好，店长；我们正在搜捕一个从上层逃窜至下层的通缉犯；她大概长这样，你有看到她去哪儿了吗？
+npc_quorra_officer_doubt,......；你确定吗，我们刚刚看到她往这个方向跑了
+npc_quorra_officer_leave,......;好吧，打扰了；祝你经营顺利
+npc_quorra_arrest_reaction,神经啊!;有没有搞错！
+npc_quorra_arrest_warning,老实点!；要是再妨碍公务；你的母亲也保不住你！
+npc_quorra_relief,呼......;刚刚真是好险；你应该没有真的想过把我供出来吧
+npc_quorra_contraband,而且看你店里的这些东西......；你才是应该被抓起来的那一个好吗；*狡黠地眨了眨眼*
+npc_quorra_server,开个玩笑；我刚刚看到你店里还摆着一台服务器；你还经营这种业务？；没别的意思；只是在下层区看到这种东西还挺意外的；这么看你真是救对人了
+npc_quorra_card,*将一张卡片推到了桌前*；我叫葵拉；我对这方面很熟悉；我最近会在下层区呆一阵子；*把手放在耳边作了打电话的模样*；要是有什么事儿电话联系
+quorra_choice_hide,???
+quorra_choice_report,她闯进来了，现在就在我店里
+quorra_choice_deny,我不知道
+quorra_choice_deny_again,我真的没看见
+
+# Electronics market event clients
+age_of_agi.crypto_boom_fan_name,狂热虚拟币投资者
+age_of_agi.crypto_boom_fan_greeting,我敢说这次是有史以来最大的一次涨幅；今天多入手一点，明天我就能搬到上层去了；你这里的BTC有多少我要多少
+age_of_agi.crypto_boom_secondhand_name,二手投机客
+age_of_agi.crypto_boom_secondhand_greeting,这次的币潮真是够呛，是吧；但是也许我能从中大赚一笔；比特币和显卡都拿出来给我看看
+age_of_agi.crypto_boom_upper_name,游手好闲的上层人
+age_of_agi.crypto_boom_upper_greeting,我早就说了；虚拟币市场一定会迎来大涨；我的家人一直不肯相信我；这次我要向他们证明我才是对的；把显卡和BTC都拿出来；这次有多少我投多少
+
+age_of_agi.astar_breakthrough_fan_name,Astar的狂热拥趸
+age_of_agi.astar_breakthrough_fan_greeting,你看新闻了吗；Astar又取得重大突破了；我敢说，照这个势头；用不了两年AGI就会完全实现；到时候大家就都能过上好日子了；我也想为他们出一份力；显卡，内存和数据容器什么的我都要
+age_of_agi.astar_breakthrough_investor_name,冷静的投资人
+age_of_agi.astar_breakthrough_investor_greeting,Astar又在吹嘘所谓的AGI了；虽然我不相信他们；但是现在确确实实可以投资赚一笔；显卡，内存，数据容器，这次涨了的我全都要追加投资
+age_of_agi.astar_breakthrough_desperate_name,绝望的下层人
+age_of_agi.astar_breakthrough_desperate_greeting,搞什么鬼，Astar真的想把人类全毁了吗；光是像人的改造体就已经折腾得够呛了；现在又来一个什么通用智能；它要是什么都能做了还要人活着干什么；……；哎，我的工作已经丢了；希望Astar这次不是在骗人；我只能随大流了，不然饭都吃不起了
+
+age_of_agi.electronics_surge_enthusiast_name,电子产品爱好者
+age_of_agi.electronics_surge_enthusiast_greeting,下层的日子真难过啊；要是没有这些宝贝收藏，那就一点儿盼头都没有了；你这里还有什么稀奇的电子产品吗；我没太多钱，但是看上眼的都会尽量买
+age_of_agi.electronics_surge_repair_owner_name,维修店店主
+age_of_agi.electronics_surge_repair_owner_greeting,这批涨价来得太巧了；前两天才有人把维修零件成箱收走；现在店里连一块能用的电路板都找不出来；客户的设备总不能一直堆着；你这里有电子零件或者旧硬件就卖给我；能修的我修；不能修的我拆
+age_of_agi.electronics_surge_hoarder_name,囤积电子产品的上层商
+age_of_agi.electronics_surge_hoarder_greeting,你还在犹豫的时候；我已经把下一批货都订好了；别跟我说什么市场异常；只要最后能卖出去；涨价就是机会；下层的那些人只看到今天的价格；我看的是下一周；你这里的电子产品都拿出来；只要价格合适；我就全部吃下
+
+age_of_agi.crypto_crash_desperate_name,绝望的虚拟币投资者
+age_of_agi.crypto_crash_desperate_greeting,完了，全完了；他们到底是怎么搞的；明明说好了这次一定会赚钱的；我现在除了这几个BTC什么都没有了；你收吗；你要是全收了，我就顺便在你这买点吃的
+age_of_agi.crypto_crash_angry_upper_name,愤怒的虚拟币投资者
+age_of_agi.crypto_crash_angry_upper_greeting,真是看走了眼了；那骗子一直向我吹捧这次市场有多么好；没想到他是想骗我进去，自己狠狠捞一笔；这些破烂硬币我留着也没什么用了，全部收了我就给你打折
+
+age_of_agi.ai_fear_angry_lower_name,愤怒的下层居民
+age_of_agi.ai_fear_angry_lower_greeting,治安局到底干什么吃的；我现在走在路上都怕被改造体突然抓着同化了；就这样了居然当局还允许推进AI研究；他们简直是在自取灭亡；这些东西我留手里都怕脏了我的手；你看看你有什么要的都拿走吧
+age_of_agi.ai_fear_data_merchant_name,数据商人
+age_of_agi.ai_fear_data_merchant_greeting,哎，不知道谁又在煽风点火；把改造体的事儿往智能AI上扯；我这批数据全部砸手里了，看看你有什么需要的吧
+age_of_agi.ai_fear_astar_researcher_name,Astar研究员
+age_of_agi.ai_fear_astar_researcher_greeting,下层这帮人真是无知；但凡他们受过一点高等教育，就知道改造体和自主AI完全是两码事；我们公司还因此暂缓了产品推进，天哪；哎，无论如何，这批货应该是不要了；你要是全包了我就给你打个折
+
+# Shared buyer budget and GPU inspection responses
+electronics_buyer_available_credits,我的预算是{0}信用点。
+gpu_calculator_confront_success,你说得对；那我给你便宜点儿吧
+gpu_calculator_confront_thanks,真的吗；谢谢你的提醒
+gpu_calculator_confront_failed,什么意思；你再好好看看呢。
+
+# Inactive names/dialogue retained as editable content; no runtime visit routes
+
+electronics_buyer_name,电子技术员
+electronics_buyer_greeting,最近电子市场的行情很不稳定啊，你有什么想要出手的东西吗;我的预算是{0}信用点。
+
+electronics_professional_name,电子采购工程师
+electronics_professional_greeting,"空间站的自动处理系统又坏掉了;维修需要各式各样的电子产品,如果有智能处理模型我也会一并购入;我的预算是{0}信用点。"
+
+electronics_seller_advanced_name,高级电子设备商
+
+data_engineer_name,普通数据工程师
+data_engineer_greeting,最近的一个项目需要大量数据；我的预算是{0}信用点；我还带了两个空数据容器，需要的话可以买下来
+
+data_engineer_advanced_name,高级数据工程师
+data_engineer_advanced_greeting,最近的一个项目需要大量数据；我的预算是{0}信用点；我还带了两个空数据容器，需要的话可以买下来
+
+cloud_provider_name,云服务商
+cloud_provider_greeting,最近推进的AI产品需要大量数据，你这里有多少数据我要多少；我的预算是{0}信用点；我还带了两个空数据容器，需要的话可以买下来
+

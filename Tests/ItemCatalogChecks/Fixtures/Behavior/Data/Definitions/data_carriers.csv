@@ -1,0 +1,13 @@
+item_id,mode,capacity,initial_data,data_unit_value,sprite_prefix
+age_of_agi.dc_common_data_disk,computing,80,80,1,
+age_of_agi.dc_common_data_disk_shabby,computing,30,30,1,
+age_of_agi.dc_enterprise_databox,computing,400,400,1,
+age_of_agi.dc_enterprise_databox_shabby,computing,150,150,1,
+age_of_agi.dc_military_terminal,intrusion,1600,1600,1,
+age_of_agi.dc_military_terminal_shabby,intrusion,600,600,1,
+age_of_agi.data_container,container,60,0,4,data_container
+age_of_agi.hypo_data_container,container,225,0,4,hypo_data_container
+age_of_agi.dc_braininterface,computing,800,800,1,
+age_of_agi.dc_eyeball,computing,40,40,1,
+age_of_agi.dc_idcard,computing,20,20,1,
+age_of_agi.dc_suspeciousdisk,computing,200,200,1,

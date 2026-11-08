@@ -1,0 +1,5 @@
+task,value_per_use,task_multiplier,untrained_multiplier
+computing,20,1,0.2
+sensory_analysis,20,1.25,0.2
+biological_analysis,20,1.5,0.2
+intelligence_intrusion,20,2,0.2

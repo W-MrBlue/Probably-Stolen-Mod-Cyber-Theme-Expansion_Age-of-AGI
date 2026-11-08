@@ -1,0 +1,499 @@
+{
+  "id": "gpu_apprasial_guide",
+  "title": "gpu_apprasial_guide",
+  "background": "gpu_guide_background",
+  "width": 628.0,
+  "height": 804.0,
+  "posX": 47.5,
+  "posY": 4.5,
+  "chrome": [
+    {
+      "type": "button",
+      "id": "close",
+      "x": 297.0,
+      "y": 4.0,
+      "w": 14.0,
+      "h": 15.0,
+      "sprite": "paper_buttons_close3",
+      "action": "close"
+    },
+    {
+      "type": "button",
+      "id": "zoom",
+      "x": 277.0,
+      "y": 4.5,
+      "w": 14.0,
+      "h": 15.0,
+      "sprite": "paper_buttons_screen_0",
+      "action": "zoom"
+    },
+    {
+      "type": "button",
+      "id": "flip_left",
+      "x": 124.0,
+      "y": 380.5,
+      "w": 16.0,
+      "h": 16.0,
+      "sprite": "age_of_agi:paper_buttons_l_3",
+      "action": "flip_left"
+    },
+    {
+      "type": "button",
+      "id": "flip_right",
+      "x": 176.0,
+      "y": 380.5,
+      "w": 14.0,
+      "h": 15.0,
+      "sprite": "age_of_agi:paper_buttons3",
+      "action": "flip_right"
+    },
+    {
+      "id": "page_indicator",
+      "x": 140.5,
+      "y": 374.0,
+      "w": 33.0,
+      "h": 25.0,
+      "style": "page_number",
+      "align": "center",
+      "valign": "middle",
+      "wrap": false,
+      "action": "page_indicator"
+    }
+  ],
+  "templates": [],
+  "pages": [
+    {
+      "name": "status_inspection",
+      "slots": {},
+      "elements": [
+        {
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_power_interface_issues",
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "power_interface_problem"
+        },
+        {
+          "id": "header",
+          "x": 70.5,
+          "y": 14.0,
+          "w": 173.0,
+          "h": 15.0,
+          "loc": "book_gpu_guide_publisher",
+          "style": "header",
+          "align": "center",
+          "wrap": false
+        },
+        {
+          "id": "title",
+          "x": 27.0,
+          "y": 30.0,
+          "w": 262.0,
+          "h": 19.0,
+          "loc": "book_gpu_guide_title",
+          "style": "title",
+          "align": "center",
+          "wrap": false
+        },
+        {
+          "type": "flow",
+          "id": "body_flow",
+          "x": 26.0,
+          "y": 54.0,
+          "w": 253.0,
+          "h": 290.0,
+          "slot": "2",
+          "spacing": 4.0
+        },
+        {
+          "id": "body",
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_intro",
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_status_heading",
+          "style": "section",
+          "color": "3C5499",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "x": 34.0,
+          "y": 140.0,
+          "w": 275.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_status_intro",
+          "fontSize": 7.0,
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "x": 6.0,
+          "y": 6.0,
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_contacts_heading",
+          "style": "section",
+          "fontSize": 8.0,
+          "color": "3C5499",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "type": "flow",
+          "id": "gold_finger_problems",
+          "x": 180.0,
+          "y": 124.0,
+          "h": 48.0,
+          "autoHeight": true
+        },
+        {
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_contacts_issues",
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "gold_finger_problems"
+        },
+        {
+          "type": "image",
+          "x": 28.0,
+          "y": 160.5,
+          "w": 65.0,
+          "h": 15.0,
+          "sprite": "gpu_goldfinger_up",
+          "flow": "body_flow"
+        },
+        {
+          "type": "image",
+          "x": 28.0,
+          "y": 193.0,
+          "w": 104.0,
+          "h": 10.0,
+          "sprite": "gpu_goldfinger_down",
+          "flow": "body_flow"
+        },
+        {
+          "x": 12.0,
+          "y": 12.0,
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_power_interface_heading",
+          "style": "section",
+          "color": "3C5499",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "type": "image",
+          "x": 135.0,
+          "y": 190.0,
+          "w": 44.0,
+          "h": 23.0,
+          "sprite": "gpu_power_interface",
+          "flow": "body_flow"
+        },
+        {
+          "type": "flow",
+          "id": "power_interface_problem",
+          "x": 178.0,
+          "y": 176.0,
+          "h": 48.0,
+          "autoHeight": true
+        },
+        {
+          "x": 40.0,
+          "y": 146.0,
+          "w": 200.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_unusable_warning",
+          "fontSize": 7.0,
+          "color": "871313",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "x": 6.0,
+          "y": 6.0,
+          "w": 0.0,
+          "h": 0.0,
+          "loc": "book_gpu_guide_performance_heading",
+          "style": "section",
+          "color": "3C5499",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "x": 40.0,
+          "y": 146.0,
+          "w": 275.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_performance_intro",
+          "fontSize": 7.0,
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "x": 57.0,
+          "y": 195.0,
+          "w": 200.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_performance_formula",
+          "fontSize": 6.0,
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "body_flow"
+        },
+        {
+          "type": "image",
+          "x": 27.0,
+          "y": 290.0,
+          "w": 34.0,
+          "h": 50.0,
+          "sprite": "gpu_mem_lowfrequency_rec",
+          "flow": "gmem_showcase"
+        },
+        {
+          "type": "flow",
+          "id": "gmem_showcase",
+          "x": 38.0,
+          "y": 282.0,
+          "w": 36.0,
+          "h": 81.0,
+          "autoHeight": true
+        },
+        {
+          "x": 57.0,
+          "y": 195.0,
+          "w": 200.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_memory_lowfrequency_caption",
+          "color": "A3892E",
+          "autoHeight": true,
+          "flow": "gmem_showcase"
+        },
+        {
+          "type": "flow",
+          "id": "gmem_showcase_2",
+          "x": 80.0,
+          "y": 282.0,
+          "w": 36.0,
+          "h": 81.0,
+          "autoHeight": true
+        },
+        {
+          "type": "image",
+          "x": 33.0,
+          "y": 296.0,
+          "w": 34.0,
+          "h": 50.0,
+          "sprite": "gpu_mem_mismatch_rec",
+          "flow": "gmem_showcase_2"
+        },
+        {
+          "x": 63.0,
+          "y": 201.0,
+          "w": 200.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_memory_mismatch_caption",
+          "color": "871313",
+          "autoHeight": true,
+          "flow": "gmem_showcase_2"
+        },
+        {
+          "type": "flow",
+          "id": "gmem_showcase_3",
+          "x": 122.0,
+          "y": 282.0,
+          "w": 36.0,
+          "h": 81.0,
+          "autoHeight": true
+        },
+        {
+          "type": "image",
+          "x": 39.0,
+          "y": 302.0,
+          "w": 34.0,
+          "h": 50.0,
+          "sprite": "gpu_mem_normal_rec",
+          "flow": "gmem_showcase_3"
+        },
+        {
+          "x": 69.0,
+          "y": 207.0,
+          "w": 200.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_memory_normal_caption",
+          "color": "525252",
+          "autoHeight": true,
+          "flow": "gmem_showcase_3"
+        },
+        {
+          "type": "image",
+          "x": 208.0,
+          "y": 298.0,
+          "w": 12.0,
+          "h": 12.0,
+          "sprite": "gpu_power_module"
+        },
+        {
+          "x": 191.0,
+          "y": 314.0,
+          "w": 50.0,
+          "h": 12.0,
+          "loc": "book_gpu_guide_power_module_caption",
+          "color": "525252",
+          "autoHeight": true
+        }
+      ]
+    },
+    {
+      "name": "core_inspection",
+      "slots": {},
+      "elements": [
+        {
+          "id": "core_header",
+          "x": 70.5,
+          "y": 14.0,
+          "w": 173.0,
+          "h": 15.0,
+          "loc": "book_gpu_guide_publisher",
+          "style": "header",
+          "align": "center",
+          "wrap": false
+        },
+        {
+          "id": "core_title",
+          "x": 27.0,
+          "y": 30.0,
+          "w": 262.0,
+          "h": 19.0,
+          "loc": "book_gpu_guide_title",
+          "style": "title",
+          "align": "center",
+          "wrap": false
+        },
+        {
+          "id": "core_section",
+          "x": 26.0,
+          "y": 54.0,
+          "w": 253.0,
+          "h": 16.0,
+          "loc": "book_gpu_guide_core_heading",
+          "style": "section",
+          "color": "3C5499",
+          "autoHeight": true
+        },
+        {
+          "type": "image",
+          "id": "core_nut_image",
+          "x": 55.0,
+          "y": 82.0,
+          "w": 59.0,
+          "h": 69.0,
+          "sprite": "gpu_core_nut",
+          "fit": "fit"
+        },
+        {
+          "id": "core_nut_caption",
+          "x": 32.5,
+          "y": 159.0,
+          "w": 104.0,
+          "h": 16.0,
+          "loc": "book_gpu_guide_core_nut_caption",
+          "fontSize": 7.5,
+          "align": "center",
+          "color": "525252",
+          "wrap": false
+        },
+        {
+          "type": "image",
+          "id": "core_normal_image",
+          "x": 185.0,
+          "y": 82.0,
+          "w": 59.0,
+          "h": 69.0,
+          "sprite": "gpu_core_normal",
+          "fit": "fit"
+        },
+        {
+          "id": "core_normal_caption",
+          "x": 162.5,
+          "y": 159.0,
+          "w": 104.0,
+          "h": 16.0,
+          "loc": "book_gpu_guide_core_normal_caption",
+          "fontSize": 7.5,
+          "align": "center",
+          "color": "525252",
+          "wrap": false
+        },
+        {
+          "type": "image",
+          "id": "core_vector_image",
+          "x": 55.0,
+          "y": 205.0,
+          "w": 59.0,
+          "h": 69.0,
+          "sprite": "gpu_core_vector",
+          "fit": "fit"
+        },
+        {
+          "id": "core_vector_caption",
+          "x": 32.5,
+          "y": 282.0,
+          "w": 104.0,
+          "h": 16.0,
+          "loc": "book_gpu_guide_core_vector_caption",
+          "fontSize": 7.5,
+          "align": "center",
+          "color": "525252",
+          "wrap": false
+        },
+        {
+          "type": "image",
+          "id": "core_matrix_image",
+          "x": 185.0,
+          "y": 205.0,
+          "w": 59.0,
+          "h": 69.0,
+          "sprite": "gpu_core_matrix",
+          "fit": "fit"
+        },
+        {
+          "id": "core_matrix_caption",
+          "x": 162.5,
+          "y": 282.0,
+          "w": 104.0,
+          "h": 16.0,
+          "loc": "book_gpu_guide_core_matrix_caption",
+          "fontSize": 7.5,
+          "align": "center",
+          "color": "525252",
+          "wrap": false
+        },
+        {
+          "id": "core_mismatch_warning",
+          "x": 26.0,
+          "y": 321.0,
+          "w": 262.0,
+          "h": 24.0,
+          "loc": "book_gpu_guide_core_mismatch_warning",
+          "fontSize": 8.0,
+          "color": "871313",
+          "autoHeight": true
+        }
+      ]
+    }
+  ],
+  "locales": ["zh", "en"]
+}
